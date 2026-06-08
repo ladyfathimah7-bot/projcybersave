@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+
+    background-image:url("../assets/bgancaman.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+.phishing{
+    padding:140px 80px;
+}
+
+.phishing h1{
+    color:white;
+    font-size:70px;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.box{
+    width:320px;
+    min-height:430px;
+
+    background:white;
+
+    padding:30px;
+}
+
+.box h2{
+    margin-bottom:20px;
+}
+
+.box p,
+.box li{
+    line-height:1.8;
+}
+
+.tips{
+    margin-top:40px;
+
+    background:white;
+
+    padding:20px;
+}

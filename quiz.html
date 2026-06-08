@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Keamanan Digital</title>
+
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<section class="quiz-container">
+
+    <h1>QUIZ KEAMANAN DIGITAL</h1>
+
+    <div class="quiz-content">
+
+        <div class="question-box">
+
+            <p>Pertanyaan 1</p>
+
+            <p>Pesan berikut aman atau scam?</p>
+
+            <br>
+
+            <p>
+                "Selamat! Anda mendapatkan hadiah uang tunai,
+                klik link berikut untuk klaim sekarang!"
+                <br>
+                bit.ly/hadiah123
+            </p>
+
+        </div>
+
+        <div class="answer-box">
+
+            <button onclick="cekJawaban(this,false)">
+                Aman
+            </button>
+
+            <button onclick="cekJawaban(this,true)">
+                Scam
+            </button>
+
+            <button onclick="cekJawaban(this,false)">
+                Mungkin Aman
+            </button>
+
+            <button onclick="cekJawaban(this,false)">
+                Tidak Tahu
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="feedback">
+        FEEDBACK : Jawaban Anda akan muncul disini...
+    </div>
+
+</section>
+
+<script src="js/quiz.js"></script>
+<script src="js/navbar.js"></script>
+
+</body>
+</html>

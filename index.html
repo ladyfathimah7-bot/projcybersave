@@ -1,394 +1,47 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CyberSafe — Keamanan Digital Indonesia</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSafe</title>
+
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav>
-  <a href="#hero" class="nav-logo">
-    <div class="nav-logo-icon">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00f5ff" stroke-width="2">
-        <path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z"/>
-      </svg>
-    </div>
-    <span class="nav-logo-text">CyberSafe</span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="#hero">Beranda</a></li>
-    <li><a href="#ancaman">Ancaman</a></li>
-    <li><a href="#data">Data</a></li>
-    <li><a href="#quiz">Quiz</a></li>
-    <li><a href="#tips">Tips</a></li>
-  </ul>
-</nav>
+    <nav id="navbar"></nav>
 
-<!-- HERO -->
-<section id="hero">
-  <h1 class="hero-title">CYBERSAFE</h1>
-  <div class="hero-sub">Keamanan Digital &amp; Hindari Ancaman Online</div>
-  <p class="hero-desc">
-    Edukasi, data, dan tips untuk meningkatkan kesadaran<br>
-    serta melindungi diri dari berbagai ancaman digital.
-  </p>
-  <a href="#ancaman" class="hero-btn">MULAI SEKARANG</a>
-</section>
+    <section class="hero">
 
-<!-- ANCAMAN -->
-<section id="ancaman">
-  <div class="sec-wrap reveal">
-    <div class="sec-title-bar">ANCAMAN DIGITAL</div>
-    <div class="ancaman-grid">
+        <div class="container">
 
-      <div class="ancaman-card">
-        <div class="ac-icon-wrap">
-          <!-- Phishing: envelope with hook -->
-          <svg class="ac-svg" viewBox="0 0 48 48">
-            <rect x="6" y="14" width="36" height="24" rx="2"/>
-            <polyline points="6,14 24,28 42,14"/>
-            <line x1="24" y1="6" x2="24" y2="14"/>
-            <path d="M20,6 Q24,2 28,6"/>
-            <line x1="24" y1="2" x2="24" y2="6"/>
-            <circle cx="24" cy="1" r="1.5" fill="#00f5ff"/>
-          </svg>
+            <img src="assets/shield.png" alt="Shield" class="shield">
+
+            <div class="glass-card">
+
+                <h1>CYBERSAFE</h1>
+
+                <h3>Keamanan Digital Dan Hindari Ancaman Online</h3>
+
+                <p>
+                    Edukasi, data dan tips untuk meningkatkan kesadaran <br>
+                    serta melindungi diri berbagai ancaman digital.
+                </p>
+
+                <a href="ancaman.html" class="btn">
+                    MULAI SEKARANG
+                </a>
+
+            </div>
+
         </div>
-        <div class="ac-name">PHISHING</div>
-        <div class="ac-desc">Upaya penipuan untuk mendapatkan data pribadi melalui email atau tautan palsu.</div>
-      </div>
 
-      <div class="ancaman-card">
-        <div class="ac-icon-wrap">
-          <!-- Scam: face/mask -->
-          <svg class="ac-svg" viewBox="0 0 48 48">
-            <circle cx="24" cy="24" r="18"/>
-            <circle cx="18" cy="20" r="2" fill="#00f5ff"/>
-            <circle cx="30" cy="20" r="2" fill="#00f5ff"/>
-            <path d="M17,30 Q24,35 31,30"/>
-            <line x1="12" y1="16" x2="16" y2="18"/>
-            <line x1="36" y1="16" x2="32" y2="18"/>
-          </svg>
-        </div>
-        <div class="ac-name">SCAM ONLINE</div>
-        <div class="ac-desc">Penipuan online yang mengatasnamakan pihak tertentu untuk merugikan korban secara finansial.</div>
-      </div>
+    </section>
 
-      <div class="ancaman-card">
-        <div class="ac-icon-wrap">
-          <!-- Malware: bug -->
-          <svg class="ac-svg" viewBox="0 0 48 48">
-            <ellipse cx="24" cy="26" rx="10" ry="12"/>
-            <circle cx="24" cy="16" r="5"/>
-            <line x1="14" y1="22" x2="8" y2="20"/>
-            <line x1="14" y1="27" x2="8" y2="27"/>
-            <line x1="14" y1="32" x2="8" y2="34"/>
-            <line x1="34" y1="22" x2="40" y2="20"/>
-            <line x1="34" y1="27" x2="40" y2="27"/>
-            <line x1="34" y1="32" x2="40" y2="34"/>
-            <line x1="20" y1="14" x2="17" y2="10"/>
-            <line x1="28" y1="14" x2="31" y2="10"/>
-            <circle cx="19" cy="23" r="1.5" fill="#00f5ff"/>
-            <circle cx="29" cy="23" r="1.5" fill="#00f5ff"/>
-          </svg>
-        </div>
-        <div class="ac-name">MALWARE</div>
-        <div class="ac-desc">Perangkat lunak berbahaya yang dapat merusak sistem, mencuri data, atau mengganggu perangkat.</div>
-      </div>
+    <script src="js/navbar.js"></script>
 
-    </div>
-  </div>
-</section>
-
-<!-- DATA -->
-<section id="data">
-  <div class="sec-wrap reveal">
-    <div class="sec-title-bar">DATA KASUS CYBERCRIME DI INDONESIA (2025)</div>
-    <div class="chart-wrap">
-
-      <div class="bar-row">
-        <span class="bar-lbl">Phishing</span>
-        <div class="bar-track"><div class="bar-fill bf-1" data-w="90"></div></div>
-        <span class="bar-pct">45%</span>
-      </div>
-      <div class="bar-row">
-        <span class="bar-lbl">Scam Marketplace</span>
-        <div class="bar-track"><div class="bar-fill bf-2" data-w="67"></div></div>
-        <span class="bar-pct">30%</span>
-      </div>
-      <div class="bar-row">
-        <span class="bar-lbl">Malware</span>
-        <div class="bar-track"><div class="bar-fill bf-3" data-w="56"></div></div>
-        <span class="bar-pct">25%</span>
-      </div>
-      <div class="bar-row">
-        <span class="bar-lbl">Ransomware</span>
-        <div class="bar-track"><div class="bar-fill bf-4" data-w="33"></div></div>
-        <span class="bar-pct">15%</span>
-      </div>
-      <div class="bar-row">
-        <span class="bar-lbl">Lainnya</span>
-        <div class="bar-track"><div class="bar-fill bf-5" data-w="22"></div></div>
-        <span class="bar-pct">10%</span>
-      </div>
-
-      <div class="chart-source">Sumber: BSSN, Kominfo, APJII 2025</div>
-    </div>
-  </div>
-</section>
-
-<!-- QUIZ -->
-<section id="quiz">
-  <div class="sec-wrap reveal">
-    <div class="sec-title-bar">QUIZ KEAMANAN DIGITAL</div>
-
-    <div class="quiz-layout">
-      <!-- LEFT: pertanyaan -->
-      <div class="quiz-left">
-        <div class="quiz-user">
-          <div class="quiz-avatar">👤</div>
-          <span class="quiz-num" id="qNum">Pertanyaan 1 / 5</span>
-        </div>
-        <div class="quiz-q" id="qTeks"></div>
-        <div class="quiz-msg-box" id="qMsgBox" style="display:none"></div>
-        <button class="q-next-btn" id="qNext" onclick="nextSoal()">LANJUT →</button>
-      </div>
-
-      <!-- RIGHT: pilihan jawaban -->
-      <div class="quiz-right" id="qOpsi"></div>
-    </div>
-
-    <!-- FEEDBACK bar full width -->
-    <div class="quiz-feedback" id="qFeedback">
-      FEEDBACK: &nbsp; Jawaban Anda akan muncul di sini...
-    </div>
-  </div>
-</section>
-
-<!-- TIPS -->
-<section id="tips">
-  <div class="sec-wrap reveal">
-    <div class="sec-title-bar">TIPS KEAMANAN DIGITAL</div>
-    <div class="tips-grid">
-
-      <div class="tip-card">
-        <div class="tip-icon-box">
-          <!-- Padlock -->
-          <svg class="tip-svg" viewBox="0 0 24 24">
-            <rect x="3" y="11" width="18" height="11" rx="2"/>
-            <path d="M7 11V7a5 5 0 0110 0v4"/>
-            <circle cx="12" cy="16" r="1.5" fill="#00f5ff"/>
-          </svg>
-        </div>
-        <div class="tip-content">
-          <div class="tip-title">Gunakan Password Kuat</div>
-          <div class="tip-desc">Gunakan kombinasi huruf besar, kecil, angka, dan simbol.</div>
-        </div>
-      </div>
-
-      <div class="tip-card">
-        <div class="tip-icon-box">
-          <!-- Chain/link -->
-          <svg class="tip-svg" viewBox="0 0 24 24">
-            <path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/>
-            <path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/>
-          </svg>
-        </div>
-        <div class="tip-content">
-          <div class="tip-title">Jangan Klik Link Sembarangan</div>
-          <div class="tip-desc">Hindari klik link dari sumber yang tidak dikenal atau mencurigakan.</div>
-        </div>
-      </div>
-
-      <div class="tip-card">
-        <div class="tip-icon-box">
-          <!-- 2FA Shield -->
-          <svg class="tip-svg" viewBox="0 0 24 24">
-            <path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z"/>
-            <text x="12" y="15" text-anchor="middle" font-size="5" fill="#00f5ff" stroke="none" font-family="Arial" font-weight="bold">2FA</text>
-          </svg>
-        </div>
-        <div class="tip-content">
-          <div class="tip-title">Aktifkan Two-Factor Authentication</div>
-          <div class="tip-desc">Tambahkan lapisan keamanan extra pada akun penting Anda.</div>
-        </div>
-      </div>
-
-      <div class="tip-card">
-        <div class="tip-icon-box">
-          <!-- Key -->
-          <svg class="tip-svg" viewBox="0 0 24 24">
-            <circle cx="8" cy="12" r="5"/>
-            <line x1="13" y1="12" x2="22" y2="12"/>
-            <line x1="20" y1="12" x2="20" y2="15"/>
-            <line x1="17" y1="12" x2="17" y2="14"/>
-          </svg>
-        </div>
-        <div class="tip-content">
-          <div class="tip-title">Jangan Bagikan OTP/PIN</div>
-          <div class="tip-desc">Jangan pernah membagikan kode OTP atau PIN kepada siapa pun.</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-copy">© 2025 CyberSafe. Stay safe, stay secure!</div>
-  <div class="footer-src">
-    Sumber: <span>BSSN</span> &nbsp;|&nbsp; <span>Kominfo</span> &nbsp;|&nbsp; <span>APJII</span>
-  </div>
-</footer>
-
-<script>
-// SCROLL REVEAL
-const reveals = document.querySelectorAll('.reveal');
-new IntersectionObserver((entries) => {
-  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
-}, { threshold: 0.1 }).observe(...reveals) ||
-reveals.forEach(r => new IntersectionObserver((e) => {
-  e.forEach(x => { if(x.isIntersecting) x.target.classList.add('visible'); });
-}, { threshold: 0.1 }).observe(r));
-
-// BAR CHART ANIMASI
-document.querySelectorAll('.bar-fill').forEach(bar => {
-  new IntersectionObserver((entries) => {
-    entries.forEach(e => { if(e.isIntersecting) bar.style.width = bar.dataset.w + '%'; });
-  }, { threshold: 0.3 }).observe(bar);
-});
-
-// QUIZ DATA
-const soalData = [
-  {
-    q: "Pesan berikut aman atau scam?",
-    msg: '"Selamat! Anda mendapatkan hadiah uang tunai. Klik link berikut untuk klaim sekarang!"',
-    link: "bit.ly/hadiah123",
-    opts: ["Aman","Scam","Mungkin Aman","Tidak Tahu"],
-    jawaban: 1,
-    info: "✅ SCAM! Ini modus hadiah palsu. Link bit.ly menyembunyikan tujuan aslinya. Tidak ada hadiah gratis tanpa syarat yang dikirim lewat pesan seperti ini."
-  },
-  {
-    q: "Email dari 'security@bankbca-verifikasi.com' minta login segera. Ini?",
-    msg: '"Akun Anda terdeteksi aktivitas mencurigakan. Login sekarang atau akun diblokir dalam 15 menit."',
-    link: null,
-    opts: ["Aman","Phishing!","Mungkin Aman","Tidak Tahu"],
-    jawaban: 1,
-    info: "✅ PHISHING! Domain BCA resmi adalah @bca.co.id. 'bankbca-verifikasi.com' adalah domain palsu. Bank tidak pernah mengancam blokir akun lewat email."
-  },
-  {
-    q: "Seseorang telepon mengaku dari Telkomsel minta kode OTP. Kamu?",
-    msg: null,
-    link: null,
-    opts: ["Berikan OTP-nya","TOLAK! Jangan kasih OTP","Tanya nama dulu","Berikan separuhnya"],
-    jawaban: 1,
-    info: "✅ TOLAK! OTP adalah kode rahasia hanya untukmu. Tidak ada petugas resmi yang berhak meminta OTP lewat telepon. Ini modus SIM swap fraud."
-  },
-  {
-    q: "Ada file APK dikirim via WhatsApp mengaku dari kurir paket. Kamu?",
-    msg: '"Paket Anda tertahan. Install app ini untuk konfirmasi pengiriman: Kurir_Express.apk"',
-    link: null,
-    opts: ["Install APK-nya","Hapus & abaikan","Tanya pengirimnya","Forward ke teman"],
-    jawaban: 1,
-    info: "✅ HAPUS & ABAIKAN! APK dari sumber tidak resmi mengandung malware. Kurir resmi tidak pernah minta install aplikasi lewat WhatsApp."
-  },
-  {
-    q: "Link mana yang PALING AMAN untuk diklik?",
-    msg: null,
-    link: null,
-    opts: ["http://tokopedia-promo.xyz","https://bit.ly/diskon99","https://www.tokopedia.com","tokopedia.promo-hari-ini.com"],
-    jawaban: 2,
-    info: "✅ Hanya www.tokopedia.com yang domain resmi! Domain lainnya adalah tiruan phishing. Selalu cek domain sebelum klik apapun."
-  }
-];
-
-let aktif = 0, skor = 0, sudahJawab = false;
-
-function renderSoal() {
-  sudahJawab = false;
-  const s = soalData[aktif];
-
-  document.getElementById('qNum').textContent = `Pertanyaan ${aktif+1} / ${soalData.length}`;
-  document.getElementById('qTeks').textContent = s.q;
-
-  const msgBox = document.getElementById('qMsgBox');
-  if(s.msg) {
-    msgBox.style.display = 'block';
-    msgBox.innerHTML = s.msg + (s.link ? `<span class="quiz-msg-link">${s.link}</span>` : '');
-  } else {
-    msgBox.style.display = 'none';
-  }
-
-  const opsiEl = document.getElementById('qOpsi');
-  opsiEl.innerHTML = '';
-  s.opts.forEach((o, i) => {
-    const btn = document.createElement('button');
-    btn.className = 'q-btn';
-    btn.textContent = o;
-    btn.onclick = () => { if(!sudahJawab) jawab(i); };
-    opsiEl.appendChild(btn);
-  });
-
-  const fb = document.getElementById('qFeedback');
-  fb.className = 'quiz-feedback';
-  fb.innerHTML = 'FEEDBACK: &nbsp; Jawaban Anda akan muncul di sini...';
-
-  document.getElementById('qNext').className = 'q-next-btn';
-}
-
-function jawab(idx) {
-  sudahJawab = true;
-  const s = soalData[aktif];
-  document.querySelectorAll('.q-btn').forEach((b,i) => {
-    b.disabled = true;
-    if(i === s.jawaban) b.classList.add('benar');
-    else if(i === idx && idx !== s.jawaban) b.classList.add('salah');
-  });
-
-  const fb = document.getElementById('qFeedback');
-  if(idx === s.jawaban) {
-    skor++;
-    fb.className = 'quiz-feedback benar';
-    fb.textContent = s.info;
-  } else {
-    fb.className = 'quiz-feedback salah';
-    fb.textContent = '❌ Salah. ' + s.info;
-  }
-
-  const nx = document.getElementById('qNext');
-  nx.className = 'q-next-btn show';
-  nx.textContent = aktif === soalData.length-1 ? 'LIHAT HASIL →' : 'LANJUT →';
-}
-
-function nextSoal() {
-  aktif++;
-  if(aktif < soalData.length) {
-    renderSoal();
-  } else {
-    document.getElementById('qNum').textContent = 'QUIZ SELESAI!';
-    document.getElementById('qTeks').textContent = `Skor kamu: ${skor} dari ${soalData.length} soal`;
-    document.getElementById('qMsgBox').style.display = 'none';
-    document.getElementById('qOpsi').innerHTML = `
-      <div style="display:flex;align-items:center;justify-content:center;height:100%">
-        <div style="text-align:center">
-          <div style="font-family:'Orbitron',monospace;font-size:48px;font-weight:900;color:var(--neon);text-shadow:0 0 30px rgba(0,245,255,0.4)">${skor}/${soalData.length}</div>
-          <div style="font-family:'Share Tech Mono',monospace;font-size:11px;color:var(--dim);letter-spacing:2px;margin-top:8px">JAWABAN BENAR</div>
-        </div>
-      </div>`;
-    document.getElementById('qFeedback').className = 'quiz-feedback';
-    document.getElementById('qFeedback').innerHTML = 'FEEDBACK: &nbsp; Quiz selesai! Tekan ulangi untuk coba lagi.';
-    const nx = document.getElementById('qNext');
-    nx.className = 'q-next-btn show';
-    nx.textContent = '↩ ULANGI';
-    nx.onclick = () => { aktif=0; skor=0; renderSoal(); nx.onclick=nextSoal; };
-  }
-}
-
-renderSoal();
-</script>
 </body>
 </html>

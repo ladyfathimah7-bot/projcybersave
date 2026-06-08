@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSafe - Keamanan Digital & Hindari Ancaman Online</title>
+    
+    <!-- Meta SEO -->
+    <meta name="description" content="Tingkatkan kesadaran keamanan digital Anda bersama CyberSafe. Pelajari ancaman online, dapatkan tips proteksi data, dan ikuti kuis edukatif secara gratis.">
+    <meta name="keywords" content="keamanan digital, cyber security, tips keamanan, malware, phishing, kuis keamanan siber">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Outfit:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background overlay containing glowing circuits -->
+    <div class="circuit-bg-container"></div>
+    <!-- Interactive Canvas Layer for moving circuits and particles -->
+    <canvas id="cyber-canvas" class="cyber-canvas"></canvas>
+    <div class="glow-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar-header">
+        <div class="container navbar-container">
+            <a href="#beranda" class="logo">
+                <img src="assets/shield_logo.png" alt="CyberSafe Logo" class="logo-img">
+                <span class="logo-text">CyberSafe</span>
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" aria-label="Toggle Navigation" id="mobileToggle">
+                <i data-lucide="menu" id="toggleIcon"></i>
+            </button>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+                    <li><a href="#ancaman" class="nav-link">Ancaman</a></li>
+                    <li><a href="#data" class="nav-link">Data</a></li>
+                    <li><a href="#quiz" class="nav-link">Quiz</a></li>
+                    <li><a href="#tips" class="nav-link">Tips</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="beranda" class="hero-section">
+            <div class="container hero-container">
+                <!-- Kolom Kiri: Ilustrasi Gembok/Shield -->
+                <div class="hero-left">
+                    <div class="shield-image-wrapper">
+                        <img src="assets/cyber_shield_padlock.jpg" alt="Cyber Security Shield Padlock" class="shield-img">
+                        <div class="shield-glow-effect"></div>
+                    </div>
+                </div>
+                
+                <!-- Kolom Kanan: Konten Teks -->
+                <div class="hero-right">
+                    <div class="hero-content">
+                        <h1 class="hero-title">CYBERSAFE</h1>
+                        <p class="hero-subtitle">Keamanan Digital Dan Hindari Ancaman Online</p>
+                        <p class="hero-description">
+                            Edukasi, data dan tips untuk meningkatkan kesadaran serta melindungi diri berbagai ancaman digital.
+                        </p>
+                        
+                        <div class="hero-actions">
+                            <a href="#ancaman" class="btn btn-glow">
+                                <span>MULAI SEKARANG →</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Threats Section ("Ancaman") -->
+        <section id="ancaman" class="placeholder-section">
+            <div class="container">
+                <div class="placeholder-content">
+                    <span class="section-tag">Ancaman</span>
+                    <h2 class="placeholder-title">Ancaman Digital</h2>
+                    <p class="placeholder-desc">Halaman konten edukasi mengenai ancaman online.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Section ("Data") -->
+        <section id="data" class="placeholder-section">
+            <div class="container">
+                <div class="placeholder-content">
+                    <span class="section-tag">Data</span>
+                    <h2 class="placeholder-title">Data Keamanan</h2>
+                    <p class="placeholder-desc">Halaman konten statistik dan data keamanan siber.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Section ("Quiz") -->
+        <section id="quiz" class="placeholder-section">
+            <div class="container">
+                <div class="placeholder-content">
+                    <span class="section-tag">Kuis</span>
+                    <h2 class="placeholder-title">Kuis Siber</h2>
+                    <p class="placeholder-desc">Halaman konten kuis kesadaran keamanan digital.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips Section ("Tips") -->
+        <section id="tips" class="placeholder-section">
+            <div class="container">
+                <div class="placeholder-content">
+                    <span class="section-tag">Tips</span>
+                    <h2 class="placeholder-title">Tips Keamanan</h2>
+                    <p class="placeholder-desc">Halaman konten panduan dan tips proteksi diri.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <a href="#beranda" class="logo footer-logo">
+                    <img src="assets/shield_logo.png" alt="CyberSafe Logo" class="logo-img">
+                    <span class="logo-text">CyberSafe</span>
+                </a>
+                <p class="footer-desc">
+                    Meningkatkan literasi keamanan siber dan perlindungan data pribadi demi menciptakan ekosistem digital Indonesia yang aman dan tangguh.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="#" class="social-link" aria-label="GitHub"><i data-lucide="github"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links-group">
+                <h4 class="footer-heading">Navigasi</h4>
+                <ul class="footer-links">
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#ancaman">Ancaman</a></li>
+                    <li><a href="#data">Data</a></li>
+                    <li><a href="#quiz">Quiz</a></li>
+                    <li><a href="#tips">Tips</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links-group">
+                <h4 class="footer-heading">Hubungi Kami</h4>
+                <ul class="footer-links contact-info">
+                    <li>
+                        <i data-lucide="mail" class="footer-icon"></i>
+                        <span>info@cybersafe.id</span>
+                    </li>
+                    <li>
+                        <i data-lucide="map-pin" class="footer-icon"></i>
+                        <span>Jakarta, Indonesia</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p class="copyright-text">© 2026 CyberSafe. Hak Cipta Dilindungi.</p>
+            <p class="design-credit text-neon-blue">Didesain dengan Keamanan Maksimal</p>
+        </div>
+    </footer>>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
