@@ -2,6 +2,7 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Keamanan Digital</title>
 
     <link rel="stylesheet" href="css/navbar.css">
@@ -19,45 +20,34 @@
 
         <div class="question-box">
 
-            <p>Pertanyaan 1</p>
-
-            <p>Pesan berikut aman atau scam?</p>
+            <p id="nomor"></p>
 
             <br>
 
-            <p>
-                "Selamat! Anda mendapatkan hadiah uang tunai,
-                klik link berikut untuk klaim sekarang!"
-                <br>
-                bit.ly/hadiah123
-            </p>
+            <p id="soal"></p>
 
         </div>
 
-        <div class="answer-box">
-
-            <button onclick="cekJawaban(this,false)">
-                Aman
-            </button>
-
-            <button onclick="cekJawaban(this,true)">
-                Scam
-            </button>
-
-            <button onclick="cekJawaban(this,false)">
-                Mungkin Aman
-            </button>
-
-            <button onclick="cekJawaban(this,false)">
-                Tidak Tahu
-            </button>
+        <div class="answer-box" id="jawaban">
 
         </div>
 
     </div>
 
     <div id="feedback">
-        FEEDBACK : Jawaban Anda akan muncul disini...
+        FEEDBACK : Jawaban Anda akan muncul di sini...
+    </div>
+
+    <div class="next-container">
+
+        <button
+            id="nextBtn"
+            onclick="nextQuestion()"
+            disabled>
+
+            Selanjutnya →
+        </button>
+
     </div>
 
 </section>

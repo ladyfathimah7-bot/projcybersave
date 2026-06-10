@@ -7,7 +7,7 @@
 body{
     min-height:100vh;
 
-    background-image:url("../assets/background.jpg");
+    background-image:url("../assets/bgtips.jpg");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -15,21 +15,9 @@ body{
     color:white;
 }
 
-/* SECTION */
-
 .tips-section{
-    padding:140px 60px 60px;
+    padding:140px 60px 40px;
 }
-
-.tips-section h1{
-    text-align:center;
-
-    font-size:50px;
-
-    margin-bottom:50px;
-}
-
-/* GRID 2 x 2 */
 
 .tips-container{
 
@@ -39,8 +27,6 @@ body{
 
     gap:30px;
 }
-
-/* CARD */
 
 .tip-card{
 
@@ -63,8 +49,6 @@ body{
     min-height:180px;
 }
 
-/* FOTO */
-
 .tip-card img{
 
     width:120px;
@@ -74,36 +58,50 @@ body{
     object-fit:contain;
 }
 
-/* TEKS */
-
 .tip-text h2{
 
-    font-size:26px;
+    font-size:24px;
 
     margin-bottom:10px;
 }
 
 .tip-text p{
 
-    font-size:17px;
+    font-size:16px;
 
     line-height:1.6;
 }
 
-/* RESPONSIVE */
+.sumber{
+
+    text-align:center;
+
+    margin-top:15px;
+
+    padding-bottom:20px;
+
+    font-size:16px;
+
+}
+
+footer{
+
+    text-align:center;
+
+    margin-top:50px;
+
+    font-size:18px;
+}
 
 @media(max-width:900px){
 
     .tips-container{
-
         grid-template-columns:1fr;
     }
 
     .tip-card{
-
         flex-direction:column;
-
         text-align:center;
     }
 
-} 
+}
