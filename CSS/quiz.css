@@ -7,7 +7,7 @@
 body{
     min-height:100vh;
 
-    background-image:url("../assets/bgquiz.jpg");
+    background-image:url("../assets/background.jpg");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -20,12 +20,16 @@ body{
 }
 
 .quiz-container h1{
-    margin-bottom:50px;
+
     font-size:50px;
+
+    margin-bottom:50px;
 }
 
 .quiz-content{
+
     display:flex;
+
     gap:50px;
 }
 
@@ -37,9 +41,37 @@ body{
 
     padding:40px;
 
-    font-size:30px;
+    border-radius:10px;
+
+    font-size:28px;
 
     line-height:1.8;
+}
+
+.question-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+}
+
+#skorBox{
+
+    background:#1d2475;
+
+    color:#ffd700;
+
+    border:2px solid #ffd700;
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    font-size:20px;
+
+    font-weight:bold;
 }
 
 .answer-box{
@@ -57,43 +89,51 @@ body{
 
     padding:20px;
 
-    font-size:30px;
-
     border:none;
 
     cursor:pointer;
 
+    font-size:24px;
+
+    text-align:left;
+
     background:#12144f;
 
     color:white;
+
+    border-radius:10px;
 
     transition:0.3s;
 }
 
 .answer-box button:hover{
 
-    opacity:0.9;
+    transform:translateY(-2px);
+}
+
+.benar{
+
+    background:green !important;
+}
+
+.salah{
+
+    background:red !important;
 }
 
 #feedback{
 
-    margin-top:50px;
+    margin-top:40px;
 
     background:#12144f;
 
     padding:30px;
 
-    font-size:24px;
+    border-radius:10px;
+
+    font-size:22px;
 
     line-height:1.8;
-}
-
-.benar{
-    background:green !important;
-}
-
-.salah{
-    background:red !important;
 }
 
 .next-container{
@@ -111,15 +151,15 @@ body{
 
     border:none;
 
-    border-radius:5px;
-
-    font-size:20px;
-
-    cursor:pointer;
+    border-radius:8px;
 
     background:white;
 
     color:black;
+
+    font-size:18px;
+
+    cursor:pointer;
 }
 
 #nextBtn:disabled{
@@ -127,4 +167,63 @@ body{
     opacity:0.5;
 
     cursor:not-allowed;
+}
+
+.result-box{
+
+    width:100%;
+
+    background:#12144f;
+
+    padding:60px;
+
+    border-radius:10px;
+
+    text-align:center;
+}
+
+.result-box h1{
+
+    font-size:50px;
+
+    margin-bottom:30px;
+}
+
+.score-circle{
+
+    width:180px;
+    height:180px;
+
+    margin:20px auto;
+
+    border-radius:50%;
+
+    border:8px solid #ffd700;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    font-size:55px;
+
+    font-weight:bold;
+
+    color:#ffd700;
+}
+
+.result-box h2{
+
+    margin-top:20px;
+
+    font-size:35px;
+}
+
+.result-box p{
+
+    margin-top:20px;
+
+    font-size:22px;
+
+    line-height:1.8;
 }

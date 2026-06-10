@@ -144,6 +144,9 @@ function loadQuestion(){
 
     document.getElementById("nextBtn").disabled = true;
 
+    document.getElementById("skorBox").innerText =
+    "Skor : " + skor + "/100";
+
     const jawaban =
     document.getElementById("jawaban");
 
@@ -156,7 +159,8 @@ function loadQuestion(){
 
         btn.innerText = p;
 
-        btn.onclick = () => cekJawaban(btn,p);
+        btn.onclick = () =>
+        cekJawaban(btn,p);
 
         jawaban.appendChild(btn);
 
@@ -185,7 +189,7 @@ function cekJawaban(button,pilihan){
 
     if(pilihan === data.benar){
 
-        skor++;
+        skor += 20;
 
         document.getElementById("feedback").innerText =
         "FEEDBACK : " + data.feedbackBenar;
@@ -196,7 +200,11 @@ function cekJawaban(button,pilihan){
 
         document.getElementById("feedback").innerText =
         "FEEDBACK : " + data.feedbackSalah;
+
     }
+
+    document.getElementById("skorBox").innerText =
+    "Skor : " + skor + "/100";
 
     document.getElementById("nextBtn").disabled = false;
 }
@@ -211,26 +219,38 @@ function nextQuestion(){
 
     }else{
 
-        let nilai =
-        Math.round((skor / quiz.length) * 100);
-
         document.querySelector(".quiz-content").innerHTML =
 
-        `<div class="question-box">
+        `
+        <div class="result-box">
 
-            <h2>Quiz Selesai</h2>
+            <h1>QUIZ SELESAI</h1>
 
-            <br>
+            <div class="score-circle">
 
-            <h3>Skor Anda : ${skor}/${quiz.length}</h3>
+                ${skor}
 
-            <br>
+            </div>
 
-            <h3>Nilai : ${nilai}%</h3>
+            <h2>Skor Akhir Anda</h2>
 
-        </div>`;
+            <p>
+                ${
+                    skor >= 80
+                    ? "Pemahaman keamanan digital Anda sangat baik."
+                    : skor >= 60
+                    ? "Pemahaman keamanan digital Anda cukup baik."
+                    : "Perlu belajar lebih lanjut mengenai keamanan digital."
+                }
+            </p>
 
-        document.getElementById("feedback").style.display = "none";
-        document.querySelector(".next-container").style.display = "none";
+        </div>
+        `;
+
+        document.getElementById("feedback").style.display =
+        "none";
+
+        document.querySelector(".next-container").style.display =
+        "none";
     }
 }
